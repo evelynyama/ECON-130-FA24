@@ -1,0 +1,63 @@
+      Code Book for New Jersey-Pennsylvania Data Set
+
+Note: there are 410 observations in the data set
+
+ Name:           Explanation
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+STORE_ID        sheet number (unique store id)
+CHAIN           chain 1=bk; 2=kfc; 3=roys; 4=wendys
+CO_OWNED        1 if company owned
+STATE           1 if NJ; 0 if Pa                      
+
+Dummies for location:
+SOUTHJ          1 if in southern NJ
+CENTRALJ        1 if in central NJ
+NORTHJ          1 if in northern NJ
+PA1             1 if in PA, northeast suburbs of Phila
+PA2             1 if in PA, Easton etc
+SHORE           1 if on NJ shore
+
+INTERVIEW       1 if first interview, 2 if second
+
+NCALLS          number of call-backs*
+FULL_TIME       # full-time employees
+PART_TIME       # part-time employees
+MANAGERS        # managers/ass't managers
+WAGE_ST         starting wage ($/hr)
+INC_TIME        months to usual first raise
+FIRST_INC       usual amount of first raise ($/hr)
+BONUS           1 if cash bounty for new workers
+PCT_AFF         % employees affected by new minimum
+MEALS           free/reduced price code (See below)
+OPEN_HR         hour of opening
+HRS_OPEN        number hrs open per day
+P_SODA          price of medium soda, including tax
+P_FRY           price of small fries, including tax
+P_ENTREE        price of entree, including tax
+N_REGS          number of cash registers in store
+N_REGS11        number of registers open at 11:00 am
+TYPE            type 2nd interview 1=phone; 2=personal
+STATUS          status of second interview: see below
+DATE            date of second interview MMDDYY format
+SPECIAL         1 if special program for new workers
+
+Codes:
+
+Free/reduced Meal Variable:
+0 = none
+1 = free meals
+2 = reduced price meals
+3 = both free and reduced price meals
+
+
+Second Interview Status
+0 = refused second interview (count = 1)
+1 = answered 2nd interview (count = 399)
+2 = closed for renovations (count = 2)
+3 = closed "permanently" (count = 6)
+4 = closed for highway construction (count = 1)
+5 = closed due to Mall fire (count = 1)
+
+
+*Note: number of call-backs = 0 if contacted on first call
+
