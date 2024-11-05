@@ -1,0 +1,21 @@
+school_bonds.csv codebook
+
+Variable		Description
+********************************************************
+pctyes		Percent in district voting yes
+year		School Year (Fall)
+leaid		District code
+stabbr		two-letter State abbreviation
+votsharereqd	Vote Share Required for passage
+margin		Relative vote share
+passbond		Pass bond, with lags and leads (see cap_exp details)
+holdbond		Hold bond election, with lags and leads (see cap_exp details)
+
+cap_exp		Capital spending per student
+l1cap_exp	cap_exp, 1 year pre-election ("lag 1")
+l2cap_exp	cap_exp, 2 years pre-election ("lag 2")
+f1cap_exp	cap_exp, 1 year post-election ("future 1")
+f2cap_exp	cap_exp, 2 years post-election ("future 2"
+
+noncap_exp	Noncapital spending per student, with lags and leads
+
